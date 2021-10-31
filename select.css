@@ -1,0 +1,120 @@
+.dd-select {
+  height: 40px;
+  width: 190px;
+  border-radius: 40px;
+  border: 2px solid #6cf;
+  position: relative;
+  cursor: pointer;
+}
+
+.dd-select::after {
+  content: '\003E';
+  transform: rotate(90deg) scaleX(.4);
+  color: #3e3e3e;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 6px;
+}
+
+.dd-selected {
+  display: flex;
+  height: 100%;
+}
+
+
+.dd-options {
+  border-top: none;
+  list-style: none;
+  display: none;
+  position: absolute;
+  z-index: 2000;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.dd-option {
+  padding: 10px;
+  display: flex;
+  height: 34px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+}
+
+.dd-options>li:last-child>.dd-option {
+  border-bottom: none;
+}
+
+.dd-option:hover {
+  background: #f3f3f3;
+  color: #000;
+}
+
+
+.dd-option-image,
+.dd-selected-image {
+  height: 26px;
+  align-self: center;
+}
+
+.dd-container {
+  position: relative;
+}
+
+
+.dd-selected-text,
+.dd-option-text {
+  margin-left: 6px;
+  width: 100px;
+  vertical-align: baseline;
+  font-weight: bold;
+  align-self: center;
+}
+
+.dd-selected-text {
+  color: #000;
+}
+
+.square {
+  border-radius: 0;
+}
+
+@media (max-width: 1060px) {
+  .dd-select {
+    height: 30px;
+    width: 150px;
+  }
+
+  .dd-options {
+    width: 152px;
+  }
+
+  .dd-selected {
+    padding-right: 19px;
+  }
+
+  .dd-option-image,
+  .dd-selected-image {
+    height: 22px;
+  }
+
+
+  .dd-selected-text,
+  .dd-option-text {
+    font-size: 14px;
+  }
+
+  .dd-option {
+    height: 28px;
+  }
+  
+}

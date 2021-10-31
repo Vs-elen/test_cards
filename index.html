@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test 3</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <main class="main">
+
+    <div class="main__title">
+      <div class="price">
+        <p class="price__text">Цена за месяц при покупке на</p>
+
+        <select name="2A" id="select" autocomplete="off" required class="demo-htmlselect">
+          <option data-imagesrc="20.png">на год</option>
+          <option>на 1 месяц</option>
+          <option>на 3 месяца</option>
+          <option data-imagesrc="30.png">на 2 года</option>
+        </select>
+
+      </div>
+      <div class="plan">
+        <p class="plan__text">Продлить тарифы, купленные до 1 августа 2021</p>
+        <button class="plan__button">Архив тарифов</button>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="cards__item">
+        <div class="cards__header cards__header_free">
+          <h2 class="cards__title">Бесплатный</h2>
+          <p class="cards__decription">Начните работать онлайн и продавать больше с CRM</p>
+        </div>
+        <div class="cards__main cards__main_free">
+          <div class="cards__content">
+            <div class="cards__content-nolimit">
+              <img class="cards__content-pic" src="flame.png" alt="picture of flame">
+              <h3 class="cards__content-text">неограниченно пользователей</h3>
+            </div>
+            <a href="#" class="cards__content-link">узнать больше</a>
+            <p class="cards__content-price cards__content-price_free">Бесплатно</p>
+          </div>
+          <div class="cards__content-bottom">
+            <button class="cards__content-btn cards__content-btn_free">Создать</button>
+            <p class="cards__content-gb cards__content-gb_free">5 Гб</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards__item">
+        <div class="cards__header cards__header_paid">
+          <h2 class="cards__title">Базовый</h2>
+          <p class="cards__decription">Для эффективной работы небольших компаний и отделов продаж</p>
+        </div>
+        <div class="cards__main cards__main_paid">
+          <div class="cards__content cards__content_paid">
+            <div class="cards__content-title">
+              <p class="cards__content-num">5</p>
+              <h3 class="cards__content-users">пользователей</h3>
+            </div>
+            <div class="cards__price-withusers">
+            <p class="cards__content-price_crossed">2 490 ₽/мес.</p>
+            <p class="cards__content-price cards__content-price_paid">1 990 ₽/мес. <img src="20card.png"
+                class="cards__content-discount" alt="20% discount"></p>
+            <a href="#" class="cards__content-all">За всех пользователей</a>
+          </div>
+          </div>
+          <div class="cards__content-bottom">
+            <button class="cards__content-btn cards__content-btn_paid">Купить</button>
+            <p class="cards__content-gb cards__content-gb_paid">24 Гб</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards__item">
+        <div class="cards__header cards__header_paid">
+          <h2 class="cards__title">Стандартный</h2>
+          <p class="cards__decription">Для совместной работы всей компании или рабочих групп</p>
+        </div>
+        <div class="cards__main cards__main_paid">
+          <div class="cards__content">
+            <div class="cards__content-title">
+              <p class="cards__content-num">50</p>
+              <h3 class="cards__content-users">пользователей</h3>
+            </div>
+            <div class="cards__price-withusers">
+            <p class="cards__content-price_crossed">5 990 ₽/мес.</p>
+            <p class="cards__content-price cards__content-price_paid">4 790 ₽/мес. <img src="20card.png"
+                class="cards__content-discount" alt="20% discount"></p>
+            <a href="#" class="cards__content-all">За всех пользователей</a>
+          </div>
+          </div>
+          <div class="cards__content-bottom">
+            <button class="cards__content-btn cards__content-btn_paid">Купить</button>
+            <p class="cards__content-gb cards__content-gb_paid">100 Гб</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards__item">
+        <div class="cards__header cards__header_paid">
+          <h2 class="cards__title">Профессиональный</h2>
+          <p class="cards__decription">Для максимальной автоматизации всех процессов в компании</p>
+        </div>
+        <div class="cards__main cards__main_paid">
+          <div class="cards__content ">
+            <div class="cards__content-nolimit">
+              <img class="cards__content-pic" src="flame.png" alt="picture of flame">
+              <h3 class="cards__content-text">неограниченно пользователей</h3>
+            </div>
+            <div class="cards__price">
+              <p class="cards__content-price_crossed">11 990 ₽/мес.</p>
+              <p class="cards__content-price cards__content-price_paid">9 590 ₽/мес. <img src="20card.png"
+                  class="cards__content-discount" alt="20% discount"></p>
+              <a href="#" class="cards__content-all">За всех пользователей</a>
+            </div>
+          </div>
+          <div class="cards__content-bottom">
+            <button class="cards__content-btn cards__content-btn_paid">Купить</button>
+            <p class="cards__content-gb cards__content-gb_paid">1024 Гб</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </main>
+  
+  <script type="text/javascript" src="jquery.js"></script>
+  <script src="renderSelect.js"></script>
+</body>
+
+</html>
